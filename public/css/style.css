@@ -1,3 +1,36 @@
 div {
     padding: 5px 0px 10px 0px;
 }
+
+#titulo {
+    font-size:25px;
+}
+
+.form-control{
+    margin: 15px 0 50px 0;
+}
+
+main {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family: "Thasadith", sans-serif;
+
+}
+
+  .table-header {
+    background-color: #686868; 
+    color: white; 
+    font-weight: bold; 
+    text-align: center;
+    padding: 10px; 
+  }
+
+
+  .special-discipline-row {
+    background-color: #f2f2f2;
+  }
+
+
+

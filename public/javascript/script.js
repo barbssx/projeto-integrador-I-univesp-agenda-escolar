@@ -11,37 +11,44 @@ fetch('http://localhost:4000/horarios')
       const table = document.createElement('table');
       table.classList.add('table', 'table-bordered');
 
-      // Cabeçalho da tabela
+     // Cabeçalho da tabela
       const headerRow = document.createElement('tr');
       const headers = ['Dia da Semana', 'Hora de Início', 'Hora de Fim', 'Disciplina'];
+      const headerClass = 'table-header'; 
       headers.forEach(headerText => {
         const header = document.createElement('th');
         header.textContent = headerText;
+        header.classList.add(headerClass); 
         headerRow.appendChild(header);
       });
       table.appendChild(headerRow);
 
+
       // Corpo da tabela
-      filteredData.forEach(item => {
-        const row = document.createElement('tr');
-        const diaSemanaCell = document.createElement('td');
-        diaSemanaCell.textContent = item.diaSemana;
-        const horaInicioCell = document.createElement('td');
-        horaInicioCell.textContent = item.horaInicio;
-        const horaFimCell = document.createElement('td');
-        horaFimCell.textContent = item.horaFim;
-        const disciplinaCell = document.createElement('td');
-        disciplinaCell.textContent = item.disciplina;
-        
-        row.appendChild(diaSemanaCell);
-        row.appendChild(horaInicioCell);
-        row.appendChild(horaFimCell);
-        row.appendChild(disciplinaCell);
+    filteredData.forEach(item => {
+      const row = document.createElement('tr');
 
-        table.appendChild(row);
-      });
+      const diaSemanaCell = document.createElement('td');
+      diaSemanaCell.textContent = item.diaSemana;
+      const horaInicioCell = document.createElement('td');
+      horaInicioCell.textContent = item.horaInicio;
+      const horaFimCell = document.createElement('td');
+      horaFimCell.textContent = item.horaFim;
+      const disciplinaCell = document.createElement('td');
+      disciplinaCell.textContent = item.disciplina;
+      
+      if (item.disciplina === 'INTERVALO' || item.disciplina === 'TUTORIA' || item.disciplina === 'ALMOÇO' || item.disciplina === 'NIVELAMENTO') {
+        row.classList.add('special-discipline-row');
+      }
 
-      // Adicionar a tabela ao elemento com a classe "table-container"
+      row.appendChild(diaSemanaCell);
+      row.appendChild(horaInicioCell);
+      row.appendChild(horaFimCell);
+      row.appendChild(disciplinaCell);
+
+      table.appendChild(row);
+    });
+
       tableContainer.appendChild(table);
     };
 
