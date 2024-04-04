@@ -25,3 +25,5 @@ class agendaController {
     }
 
 module.exports = new agendaController();
+
+
