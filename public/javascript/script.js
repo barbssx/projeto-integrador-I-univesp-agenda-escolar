@@ -1,6 +1,9 @@
+
+// Função para fazer uma requisição GET para o endpoint /horarios e atualizar a tabela com os dados recebidos
 fetch('http://localhost:4000/horarios')
   .then(response => response.json())
   .then(data => {
+    // Função para atualizar dinamicamente a tabela com os horários filtrados
     const updateTable = (filteredData) => {
       const tableContainer = document.getElementById('table-container');
       tableContainer.innerHTML = '';
@@ -31,7 +34,8 @@ fetch('http://localhost:4000/horarios')
         const disciplinaCell = document.createElement('td');
         disciplinaCell.textContent = item.disciplina;
         
-        if (item.disciplina === 'INTERVALO' || item.disciplina === 'TUTORIA' || item.disciplina === 'ALMOÇO' || item.disciplina === 'NIVELAMENTO') {
+        if (item.disciplina === 'INTERVALO' || item.disciplina === 'TUTORIA' || 
+        item.disciplina === 'ALMOÇO' || item.disciplina === 'NIVELAMENTO') {
           row.classList.add('special-discipline-row');
         }
 
@@ -46,15 +50,20 @@ fetch('http://localhost:4000/horarios')
       tableContainer.appendChild(table);
     };
 
+    // Selecionar elementos HTML relevantes
     const turmaSelect = document.getElementById('turma');
     const diaSemanaSelect = document.getElementById('diaSemana');
+
+    // Função para filtrar os dados com base na turma e no dia da semana selecionados
     const filterDataByTurmaAndDiaSemana = () => {
       const selectedTurma = turmaSelect.value;
       const selectedDiaSemana = diaSemanaSelect.value;
 
       // Verificar se ambos turma e dia da semana foram selecionados
       if (selectedTurma && selectedDiaSemana) {
-        const filteredData = data.filter(item => item.turma === selectedTurma && item.diaSemana === selectedDiaSemana);
+        const filteredData = data.filter(item => item.turma === selectedTurma && 
+          item.diaSemana === selectedDiaSemana);
+
         updateTable(filteredData);
       }
     };
