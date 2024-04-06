@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(router);
 
 
-app.listen(4000, ()=>{
-    console.log("Aplicação rodando na porta 4000")
+app.listen(8000, ()=>{
+    console.log("Aplicação rodando na porta 8000")
 })
 
 app.get('/', (request, response) =>{
