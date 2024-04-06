@@ -1,6 +1,6 @@
 
 // Função para fazer uma requisição GET para o endpoint /horarios e atualizar a tabela com os dados recebidos
-fetch('http://localhost:4000/horarios')
+fetch('https://backend-agenda-escolar.vercel.app/horarios')
   .then(response => response.json())
   .then(data => {
     // Função para atualizar dinamicamente a tabela com os horários filtrados
