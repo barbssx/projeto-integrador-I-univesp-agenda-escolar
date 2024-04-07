@@ -9,8 +9,6 @@ h1 {
   font-family: var(--fonte-principal);
   text-shadow: 4px 2px 4px var(--cor-secundaria);
   font-size: 50px;
-  margin: 8px;
-  text-align: end;
 
 }
 
@@ -88,3 +86,48 @@ footer {
   margin: 8px;
   font-family: var(--fonte-principal);
 }
+
+
+@media only screen and (max-width: 1024px) { 
+  h1 {
+    font-size: auto;
+  }
+
+  #img-escola {
+    min-width: fit-content;
+  }
+
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+  }
+
+   h1 {
+      position: relative;
+      margin: 0;
+      color: black;
+  }
+
+  table {
+    position: relative;
+    width: fit-content;
+  }
+
+  main {
+    min-width: fit-content;
+  }
+
+  #img-escola {
+    max-width: fit-content;
+  }
+
+  #header-div {
+  min-width: auto;
+  }
+
+
+  }
