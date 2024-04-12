@@ -1,10 +1,10 @@
 var knex = require('knex')({
-    client: 'mysql2',
+    client: 'mysql',
     connection: {
-        host : '********.clusseigsge6.us-east-2.rds.amazonaws.com',
-        user : '*****',
-        password : '********',
-        database : 'db*****',
+        host : '',
+        user : '',
+        password : '',
+        database : '',
         port: 3306 
     }
 });
