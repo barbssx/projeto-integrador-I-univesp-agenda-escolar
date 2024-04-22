@@ -12,6 +12,12 @@ h1 {
 
 }
 
+h2 {
+  font-family: var(--fonte-principal);
+  font-size: 40px;
+  text-shadow: 4px 2px 4px var(--cor-secundaria);
+}
+
 table {
   text-align: center;
   background-color: #faf7ef;
@@ -22,10 +28,6 @@ div {
   padding: 5px 0px 10px 0px;
 }
 
-#titulo {
-  font-size: 25px;
-  text-shadow: 4px 2px 4px var(--cor-secundaria);
-}
 
 .form-control {
   margin: 15px 0 50px 0;
