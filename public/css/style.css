@@ -92,44 +92,39 @@ footer {
   font-family: var(--fonte-principal);
 }
 
+@media only screen and (min-width: 701px) and (max-width: 1366px){
+      h1, h2{
+        display:flex;
+        margin-left: 230px;
+        text-align: center;
+      }
 
-@media only screen and (min-width: 761px ) and (max-width: 1366px ) {
-   h1, h2 {
-    margin-left: 100px;
-   }
 
-   #img-escola {
-    margin-left: 100px;
-  }
-}
-@media only screen and (min-width: 761px ) and (max-width: 1366px ) {
-  h1, h2 {
-   margin: 0;
-  }
 
-  #img-escola {
-   min-width: 50%;
-   margin: 0;
- }
+      #img-escola {
+        margin-left: 200px;
+      }
+
+      header {
+        margin: 0; 
+      }
+    
+
 }
 
 
 @media only screen and (max-width: 700px) {
-          h1 {
-              color: black;
+          h1, h2 {
+            margin: 0;
           }
-
-          h2 {
-            color: white;
-        }
 
           #img-escola {
-            display: none;
+            width: 300px;
           }
 
-          main{
-            width: fit-content;
-            margin: 50px 0 0 0;
+          main {
+            width: 100%;
+            margin: 50px 0;
           }
         
   }
