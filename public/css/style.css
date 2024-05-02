@@ -118,12 +118,12 @@ footer {
           }
           
           main{
-            display:inline-block;
+            display:inline-flex;
             width: 100%;
           }
 
           header{
-            width: 590px;
+            width: 500px;
           }
 
           footer {
