@@ -120,10 +120,17 @@ footer {
           main{
             display:inline-flex;
             width: 100%;
+            margin-left: 100px;
           }
 
           header{
             width: 500px;
+          }
+
+          table {
+            margin: 0;
+            padding: 0;
+            width: fit-content;
           }
 
           footer {
