@@ -114,12 +114,12 @@ footer {
 
           
           h1, h2, #img-escola {
-            margin-left: 40px;
+            margin-left: 50px;
           }
           
           main{
-            
-            width: fit-content;
+            margin-left: 50px;
+            width: 100%;
             offset-distance:unset;
           
           }
@@ -130,6 +130,6 @@ footer {
           }
 
           footer {
-            margin-left: 90px;
+            margin-left: 120px;
           }
   }
