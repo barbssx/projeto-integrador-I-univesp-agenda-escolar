@@ -110,9 +110,9 @@ footer {
         
 
           #img-escola {
-            width: 400px;
+            width: 300px;
             text-align: center;
-            border: 5px ridge var(--cor-secundaria)
+            border: 2px ridge var(--cor-secundaria)
           }
 
           main {
@@ -121,17 +121,15 @@ footer {
           }
 
           header {
-            width: 600px;
+            width: 450px;
             box-sizing: border-box;
           }
 
-          h1 {
+          h1, h2 {
             text-align: center;
           }
 
-          h2 {
-            text-align: end;
-          }
+          
           
           footer {
             margin-left: 20px;
