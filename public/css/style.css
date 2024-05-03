@@ -107,7 +107,11 @@ footer {
 
 
 @media only screen and (max-width: 760px) {
-      
+        * {
+          margin: 0;
+          padding: 0;
+    }    
+
           #img-escola {
             width: 300px;
             margin-left: 45px;
@@ -115,7 +119,7 @@ footer {
 
           main {
             width: 100%;
-            margin-left: 20px;
+            margin-left: 50px;
           }
 
           header {
@@ -127,6 +131,6 @@ footer {
           }
 
           footer {
-            margin-left: 20px;
+            margin-left: 30px;
           }
   }
