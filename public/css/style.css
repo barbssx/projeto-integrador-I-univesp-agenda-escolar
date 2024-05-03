@@ -110,18 +110,23 @@ footer {
       
           #img-escola {
             width: 300px;
-            margin-left: 50px;
+            margin-left: 45px;
           }
 
           main {
             width: 100%;
+            margin-left: 20px;
           }
 
           header {
             width:520px;
           }
 
-          h1, h2, footer {
+          h1, h2{
             margin-left: 40px;
+          }
+
+          footer {
+            margin-left: 20px;
           }
   }
