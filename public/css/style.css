@@ -110,22 +110,27 @@ footer {
         
 
           #img-escola {
-            width: 300px;
+            width: 400px;
             text-align: center;
+            border: 5px ridge var(--cor-secundaria)
           }
 
           main {
             width: fit-content;
             box-sizing: border-box;
-
           }
 
           header {
             width: 600px;
+            box-sizing: border-box;
           }
 
-          h1, h2{
+          h1 {
             text-align: center;
+          }
+
+          h2 {
+            text-align: end;
           }
           
           footer {
