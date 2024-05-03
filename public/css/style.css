@@ -116,11 +116,12 @@ footer {
 
           main {
             width: fit-content;
-            margin-left: 20px;
+            box-sizing: border-box;
+
           }
 
           header {
-            width:480px;
+            width: 600px;
           }
 
           h1, h2{
