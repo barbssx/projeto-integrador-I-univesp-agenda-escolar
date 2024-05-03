@@ -107,30 +107,32 @@ footer {
 
 
 @media only screen and (max-width: 760px) {
-        * {
-          margin: 0;
-          padding: 0;
-    }    
+        
 
           #img-escola {
             width: 300px;
-            margin-left: 45px;
+            text-align: center;
           }
 
           main {
-            width: 100%;
-            margin-left: 50px;
+            width: fit-content;;
           }
 
           header {
-            width:520px;
+            width:480px;
           }
 
-          h1, h2{
-            margin-left: 40px;
+          h1, h2, footer{
+            text-align: center;
           }
 
-          footer {
-            margin-left: 30px;
+  
+          .table-header {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
           }
-  }
+
+          table {
+            font-size: 12px ;
+          }
+        }
