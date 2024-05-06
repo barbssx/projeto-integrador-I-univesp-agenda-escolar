@@ -121,12 +121,13 @@ footer {
           }
 
           header {
-            width: 500px;
+            width: 100%;
             box-sizing: border-box;
           }
 
           h1, h2 {
             text-align: center;
+            width: 100%;
           }
 
           
