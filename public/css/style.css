@@ -117,17 +117,17 @@ footer {
 
           main {
             width: fit-content;
-            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
           }
 
           header {
-            width: 100%;
-            box-sizing: border-box;
+            max-width: 500px;
           }
 
           h1, h2 {
             text-align: center;
-            width: 100%;
+            
           }
 
           
@@ -138,8 +138,9 @@ footer {
 
   
           .table-header {
-            font-family: 'Times New Roman', Times, serif;
             font-size: 15px;
+            padding: 0;
+            margin: 0;
           }
 
           table {
