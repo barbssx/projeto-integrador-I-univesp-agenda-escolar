@@ -112,7 +112,7 @@ footer {
           #img-escola {
             width: 300px;
             text-align: center;
-            margin-left: 10px;
+            margin-left: 15px;
           }
 
           main {
@@ -122,11 +122,11 @@ footer {
           }
 
           header {
-            max-width: 500px;
+            max-width: 760px;
           }
 
           h1, h2 {
-            margin-left: 10px;
+            margin-left: 15px;
             text-align: center;
             
           }
